@@ -1,0 +1,10 @@
+services:
+  apache:
+    build: ./apache
+    container_name: parcial2
+    restart: always
+    volumes:
+      - "./Proyectos:/var/www/html"
+    ports:
+      - "8089:80"
+    
